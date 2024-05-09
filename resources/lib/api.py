@@ -327,7 +327,7 @@ def get_date() -> datetime:
 
 
 def date_to_str(date: datetime) -> str:
-    return "{}-{}-{}T{}:{}:{}Z".format(
+    return "{}-{:02d}-{:02d}T{:02d}:{:02d}:{:02d}Z".format(
         date.year, date.month,
         date.day, date.hour,
         date.minute, date.second
